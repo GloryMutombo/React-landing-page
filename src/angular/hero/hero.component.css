@@ -1,0 +1,72 @@
+/* Custom styles for the Angular Hero Component */
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+/* Elegant text-shadow-glow to give the serif word "Machines" a subtle retro/modern glowing finish */
+.text-shadow-glow {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+/* Keyframes and Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.12;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.05);
+  }
+}
+
+/* Ambient backdrop glows */
+.bg-red-950\/20 {
+  animation: pulseGlow 12s ease-in-out infinite alternate;
+}
+
+.bg-orange-950\/15 {
+  animation: pulseGlow 16s ease-in-out infinite alternate-reverse;
+}
+
+/* High-craft transition micro-animations */
+img, button, a, svg {
+  display: inline-block;
+}
+
+/* Subtle card entrance animations */
+article, div.rounded-2xl {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+div.rounded-2xl:nth-child(2) {
+  animation-delay: 150s;
+}
+
+/* Glow highlight filter for the client satisfaction stats card */
+div.bg-gradient-to-br {
+  box-shadow: 0 10px 40px -10px rgba(255, 46, 0, 0.15);
+}
+
+div.bg-gradient-to-br:hover {
+  box-shadow: 0 20px 50px -10px rgba(255, 46, 0, 0.3);
+}
+
+/* Accessibility focusing state outline logic */
+*:focus-visible {
+  outline: 2px solid #FF2E00;
+  outline-offset: 4px;
+}

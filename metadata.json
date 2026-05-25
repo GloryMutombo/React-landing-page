@@ -1,0 +1,6 @@
+{
+  "name": "Chativ Hero Section",
+  "description": "A pixel-perfect reproduction of the Chativ landing page hero section with modern geometric sans-serif fonts, elegant serif typography, dynamic live USA clock, stats cards, and partner logos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
